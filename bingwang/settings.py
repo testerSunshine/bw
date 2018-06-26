@@ -25,7 +25,7 @@ SECRET_KEY = 'onffp)@i_-!*(l1fj4#hsknop367z5f)1%)@)xnjif$30efrlp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
