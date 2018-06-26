@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>彬王食品 | {% block title %}{% endblock %}</title>
+  {% block stylesheets %}
+	<link rel="stylesheet" href="/static/css/style.css" type="text/css">
+  {% endblock %}
+</head>
+  {% block bar %}
+      <div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.html">彬王</a>
+			</div>
+			<ul id="navigation">
+                {% block  active %}
+				<li class="active">
+					<a href="index.html">主页</a>
+				</li>
+				<li>
+					<a href="features.html">产品</a>
+				</li>
+				<li >
+					<a href="about.html">关于我们</a>
+				</li>
+				<li>
+					<a href="jion_us.html">加入我们</a>
+				</li>
+                {% endblock %}
+			</ul>
+		</div>
+	</div>
+  {% endblock %}
+<body>
+    {% block contents %}
+	{{ contnets }}
+    {% endblock %}
+    {% block footer %}]
+	{% include "app/foot.html" %}
+    {% endblock %}
+</body>
+</html>
